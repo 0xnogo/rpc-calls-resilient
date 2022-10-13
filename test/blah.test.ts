@@ -1,7 +1,6 @@
-import { sum } from '../src';
-
+// No test as this repo is just for demo purposes
 describe('blah', () => {
   it('works', () => {
-    expect(sum(1, 1)).toEqual(2);
+    expect(true).toBeTruthy();
   });
 });

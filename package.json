@@ -15,9 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
+    "prepare": "tsdx build"
   },
   "peerDependencies": {},
   "husky": {
@@ -34,20 +32,8 @@
   "name": "rpc-calls-resilient",
   "author": "nogo",
   "module": "dist/rpc-calls-resilient.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/rpc-calls-resilient.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/rpc-calls-resilient.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^8.1.0",
     "husky": "^8.0.1",
-    "size-limit": "^8.1.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.8.4"
